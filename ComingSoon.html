@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="Styles/ComingSoon.css"> <!-- Ensure correct CSS path -->
+</head>
+<body>
+
+    <!-- Logo -->
+    <img src="Images/logo.png" alt="Cre8 Sign Supplies Logo" id="logo">
+
+    <!-- Video Background -->
+    <video id="background-video" autoplay muted loop playsinline disableRemotePlayback>
+        <source src="Videos/comingsoon.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Centered Text Content -->
+    <div class="content">
+        <h1>Something Exciting is Coming!</h1>
+        <p>We are Cre8 Sign Supplies – your trusted partner for innovative signage solutions.</p>
+        <p>Our website is currently under development, but we’re working hard to bring you a seamless experience with high-quality products and expert services.</p>
+        <p>Stay tuned for our official launch!</p>
+
+        <div class="contact-info">
+            <p>📧 <strong>Email:</strong> <a href="mailto:info@cre8.london">info@cre8.london</a></p>
+            <p>📞 <strong>Call Us:</strong> 0300 124 6151</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let video = document.getElementById("background-video");
+    
+            function playVideo() {
+                video.play().catch(error => console.log("Autoplay blocked:", error));
+            }
+    
+            // Try autoplay immediately
+            playVideo();
+    
+            // If autoplay is blocked, play on user interaction
+            document.body.addEventListener("click", playVideo);
+        });
+        
+    </script>
+    
+
+</body>
+</html>
