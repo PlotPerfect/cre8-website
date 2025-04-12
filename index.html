@@ -3,50 +3,857 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link rel="stylesheet" href="Styles/ComingSoon.css"> <!-- Ensure correct CSS path -->
+    <title>Cre8 Sign Supplies</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/svg+xml" href="Images/Cre8Favicon.svg">
+
 </head>
 <body>
 
-    <!-- Logo -->
-    <img src="Images/logo.png" alt="Cre8 Sign Supplies Logo" id="logo">
+    <!-- Header Bar -->
+    <header id="dynamic-header">
+        <div class="logo-container">
+            <a href="#" onclick="openPanel('homePanel')">
+                <img src="Images/logo.png" alt="Cre8 Sign Supplies Logo">
+            </a>
+        </div>
 
-    <!-- Video Background -->
-    <video id="background-video" autoplay muted loop playsinline disableRemotePlayback>
-        <source src="Videos/comingsoon2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+        <!-- Menu Icon in the Center -->
+        <div class="menu-icon-container">
+            <img src="Images/MenuIconCre8.svg" alt="Menu Icon">
+        </div>
 
-    <!-- Centered Text Content -->
-    <div class="content">
-        <h1>Something Exciting is Coming!</h1>
-        <p>We are Cre8 Sign Supplies – your trusted partner for innovative signage solutions.</p>
-        <p>Our website is currently under development, but we’re working hard to bring you a seamless experience with high-quality products and expert services.</p>
-        <p>Stay tuned for our official launch!</p>
+            <!-- Orange Line Under Header -->
+        <div class="header-divider"></div>
 
-        <div class="contact-info">
-            <p>📧 <strong>Email:</strong> <a href="mailto:info@cre8.london">info@cre8.london</a></p>
-            <p>📞 <strong>Call Us:</strong> 0300 124 6151</p>
+        <div class="header-icon landline-icon">
+            <img src="Images/LandlineIcon.svg" alt="Landline Icon">
+            <span class="header-count">0300 124 6151</span>
+        
+            <!-- Landline QR code popup -->
+            <div class="qr-code-popup">
+                <img src="Images/LandlineQR.svg" alt="Landline QR Code">
+                <span>SCAN TO CALL</span>
+            </div>
+        </div>
+
+    </header>
+
+        <!-- Dropdown Menu -->
+    <div class="dropdown-menu" id="dropdownMenu">
+        <button class="menu-btn" onclick="openPanel('homePanel')">Home</button>
+        <button class="menu-btn" onclick="openPanel('productsPanel')">Products</button>
+        <button class="menu-btn" onclick="openPanel('contactPanel')">Contact Us</button>
+    </div>
+
+    <!-- Panels -->
+    <div class="home-panel active" id="homePanel">
+        <h1>Welcome to</h1>
+        <h1>CRE8 Sign Supplies</h1>
+    
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item"><img src="Images/AdhesivesIMG1.svg" alt="Image 1"></div>
+                <div class="carousel-item"><img src="Images/AdhesivesIMG2.svg" alt="Image 2"></div>
+                <div class="carousel-item"><img src="Images/AdhesivesIMG3.svg" alt="Image 3"></div>
+                <div class="carousel-item"><img src="Images/AdhesivesIMG4.svg" alt="Image 4"></div>
+                <div class="carousel-item"><img src="Images/AdhesivesIMG5.svg" alt="Image 5"></div>
+                <div class="carousel-item"><img src="Images/AdhesivesIMG6.svg" alt="Image 6"></div>
+                <div class="carousel-item"><img src="Images/AdhesivesIMG7.svg" alt="Image 7"></div>
+                <div class="carousel-item"><img src="Images/AdhesivesIMG8.svg" alt="Image 8"></div>
+                <div class="carousel-item"><img src="Images/AdhesivesIMG9.svg" alt="Image 9"></div>
+                <div class="carousel-item"><img src="Images/AdhesivesIMG10.svg" alt="Image 10"></div>
+                <div class="carousel-item"><img src="Images/Cre8LEDIMG1.svg" alt="Image 11"></div>
+                <div class="carousel-item"><img src="Images/Cre8LEDIMG2.svg" alt="Image 12"></div>
+
+                <div class="carousel-item"><img src="Images/Cre8LEDIMG4.svg" alt="Image 14"></div>
+                <div class="carousel-item"><img src="Images/Cre8LEDIMG5.svg" alt="Image 15"></div>
+                <div class="carousel-item"><img src="Images/Cre8LEDIMG6.svg" alt="Image 16"></div>
+                <div class="carousel-item"><img src="Images/ProjectionSignIMG1.svg" alt="Image 17"></div>
+                <div class="carousel-item"><img src="Images/ProjectionSignIMG2.svg" alt="Image 18"></div>
+                <div class="carousel-item"><img src="Images/SignageIMG3.svg" alt="Image 19"></div>
+                <div class="carousel-item"><img src="Images/Cre8BondIMG1.svg" alt="Image 20"></div>
+                <div class="carousel-item"><img src="Images/Cre8BondIMG2.svg" alt="Image 21"></div>
+                <div class="carousel-item"><img src="Images/Cre8BondIMG3.svg" alt="Image 22"></div>
+                <div class="carousel-item"><img src="Images/Cre8DisplayIMG1.svg" alt="Image 23"></div>
+
+                <div class="carousel-item"><img src="Images/Cre8DisplayIMG6.svg" alt="Image 28"></div>
+
+                <div class="carousel-item"><img src="Images/Cre8DisplayIMG8.svg" alt="Image 30"></div>
+                <div class="carousel-item"><img src="Images/AcrylicIMG1.svg" alt="Image 31"></div>
+                <div class="carousel-item"><img src="Images/AcrylicIMG2.svg" alt="Image 32"></div>
+                <div class="carousel-item"><img src="Images/FoamBoardIMG1.svg" alt="Image 33"></div>
+                <div class="carousel-item"><img src="Images/FoamBoardIMG2.svg" alt="Image 34"></div>
+
+                <div class="carousel-item"><img src="Images/HomepageIMG1.svg" alt="Image 35"></div>
+                <div class="carousel-item"><img src="Images/HomepageIMG2.svg" alt="Image 36"></div>
+                <div class="carousel-item"><img src="Images/HomepageIMG3.svg" alt="Image 37"></div>
+                <div class="carousel-item"><img src="Images/HomepageIMG4.svg" alt="Image 38"></div>
+                <div class="carousel-item"><img src="Images/HomepageIMG5.svg" alt="Image 39"></div>
+
+                <!-- Add more items as needed -->
+            </div>
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let video = document.getElementById("background-video");
-    
-            function playVideo() {
-                video.play().catch(error => console.log("Autoplay blocked:", error));
-            }
-    
-            // Try autoplay immediately
-            playVideo();
-    
-            // If autoplay is blocked, play on user interaction
-            document.body.addEventListener("click", playVideo);
-        });
+    <div class="content-panel" id="productsPanel">
+        <h2>Our Products</h2>
+        <div class="product-item" onmouseover="showPreview('cre8bond')" onmouseout="hidePreview()">
+            <button onclick="openPanel('cre8bondPanel')">Aluminium Composite Panels</button>
+            <div class="preview-images" id="cre8bondPreview">
+                <div class="preview-image-box">
+                    <img src="Images/Cre8BondIMG1.svg" alt="Preview 1">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8BondIMG2.svg" alt="Preview 2">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8BondIMG3.svg" alt="Preview 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item" onmouseover="showPreview('acrylicSheets')" onmouseout="hidePreview()">
+            <button onclick="openPanel('acrylicSheetsPanel')">Acrylic Sheets</button>
+            <div class="preview-images" id="acrylicSheetsPreview">
+                <div class="preview-image-box">
+                    <img src="Images/AcrylicIMG1.svg" alt="Foam Preview 1">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/AcrylicIMG2.svg" alt="Foam Preview 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item" onmouseover="showPreview('cre8foam')" onmouseout="hidePreview()">
+            <button onclick="openPanel('cre8foamPanel')">Foamboard</button>
+            <div class="preview-images" id="cre8foamPreview">
+                <div class="preview-image-box">
+                    <img src="Images/FoamBoardIMG1.svg" alt="Foam Preview 1">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/FoamBoardIMG2.svg" alt="Foam Preview 2">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="product-item" onmouseover="showPreview('cre8display')" onmouseout="hidePreview()">
+            <button onclick="openPanel('cre8displayPanel')">LED Display (Menu Board)</button>
+            <div class="preview-images" id="cre8displayPreview">
+                <div class="preview-image-box">
+                    <img src="Images/Cre8DisplayIMG1.svg" alt="Display Preview 1">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8DisplayIMG2.svg" alt="Display Preview 2">
+                </div>
+
+                <div class="preview-image-box">
+                    <img src="Images/Cre8DisplayIMG4.svg" alt="Display Preview 4">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8DisplayIMG5.svg" alt="Display Preview 5">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8DisplayIMG6.svg" alt="Display Preview 6">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8DisplayIMG7.svg" alt="Display Preview 7">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8DisplayIMG8.svg" alt="Display Preview 8">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item" onmouseover="showPreview('cre8led')" onmouseout="hidePreview()">
+            <button onclick="openPanel('cre8ledPanel')">LED's & Transformers</button>
+            <div class="preview-images" id="cre8ledPreview">
+                <div class="preview-image-box">
+                    <img src="Images/Cre8LEDIMG1.svg" alt="CRE8LED Preview 1">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8LEDIMG2.svg" alt="CRE8LED Preview 2">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8LEDIMG3.svg" alt="CRE8LED Preview 3">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8LEDIMG4.svg" alt="CRE8LED Preview 4">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8LEDIMG5.svg" alt="CRE8LED Preview 5">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/Cre8LEDIMG6.svg" alt="CRE8LED Preview 6">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-item" onmouseover="showPreview('adhesives')" onmouseout="hidePreview()">
+            <button onclick="openPanel('adhesivesPanel')">Adhesives & Accessories</button>
+            <div class="preview-images" id="adhesivesPreview">
+                <div class="preview-image-box">
+                    <img src="Images/AdhesivesIMG1.svg" alt="Adhesive Preview 1">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/AdhesivesIMG2.svg" alt="Adhesive Preview 2">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/AdhesivesIMG3.svg" alt="Adhesive Preview 3">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/AdhesivesIMG4.svg" alt="Adhesive Preview 4">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/AdhesivesIMG5.svg" alt="Adhesive Preview 5">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/AdhesivesIMG6.svg" alt="Adhesive Preview 6">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/AdhesivesIMG7.svg" alt="Adhesive Preview 7">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/AdhesivesIMG8.svg" alt="Adhesive Preview 8">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/AdhesivesIMG9.svg" alt="Adhesive Preview 9">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/AdhesivesIMG10.svg" alt="Adhesive Preview 10">
+                </div>
+            </div>
+        </div>
         
-    </script>
+        <div class="product-item" onmouseover="showPreview('projection')" onmouseout="hidePreview()">
+            <button onclick="openPanel('projectionPanel')">LED Projection Lightboxes</button>
+            <div class="preview-images" id="projectionPreview">
+                <div class="preview-image-box">
+                    <img src="Images/ProjectionSignIMG1.svg" alt="Projection Preview 1">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/ProjectionSignIMG2.svg" alt="Projection Preview 2">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/ProjectionSignIMG3.svg" alt="Projection Preview 3">
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-item" onmouseover="showPreview('signage')" onmouseout="hidePreview()">
+            <button onclick="openPanel('signagePanel')">Signage & Fabrication</button>
+            <div class="preview-images" id="signagePreview">
+                <div class="preview-image-box">
+                    <img src="Images/SignageIMG1.svg" alt="Signage Preview 1">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/SignageIMG2.svg" alt="Signage Preview 2">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/SignageIMG3.svg" alt="Signage Preview 3">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/SignageIMG4.svg" alt="Signage Preview 4">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/SignageIMG5.svg" alt="Signage Preview 5">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/SignageIMG6.svg" alt="Signage Preview 6">
+                </div>
+                <div class="preview-image-box">
+                    <img src="Images/SignageIMG7.svg" alt="Signage Preview 7">
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <!-- CRE8BOND Sub-Product Panel -->
+    <div class="content-panel" id="cre8bondPanel">
+        <div class="panel-heading">
+            <img src="Images/BondLogo.svg" alt="CRE8BOND Heading">
+        </div>
+        <button class="back-button" onclick="openPanel('productsPanel')">← Back to Products</button>
+        <div class="sub-product">
+            <button onclick="openPanel('aluminiumPanel')">Aluminium Composite Panel</button>
+            <button onclick="openPanel('hoardingPanel')">Hoarding Digital Panel</button>
+        </div>
+    </div>
+
+<!-- Aluminium Panel -->
+<div class="content-panel" id="aluminiumPanel">
+    <div class="product-panel-content">
+        <h3>Aluminium Composite Panel</h3>
+        <button class="back-button" onclick="openPanel('productsPanel')">← Back to Products</button>
+
+        <div class="product-images">
+            <div class="preview-image-box">
+                <img src="Images/Cre8BondIMG1.svg" alt="Hoarding">
+            </div>
+            <div class="preview-image-box">
+                <img src="Images/Cre8BondIMG2.svg" alt="Hoarding">
+            </div>
+            <div class="preview-image-box">
+                <img src="Images/Cre8BondIMG3.svg" alt="Hoarding">
+            </div>
+        </div>
+        
+
+        <p>Our Aluminium Composite Panels (ACP) are a premium signage solution combining a sleek aluminium finish with a durable polyethylene core. Lightweight yet rigid, these panels are ideal for both indoor and outdoor applications — from shopfront signage and display boards to cladding and exhibition panels.
+
+            Engineered for smooth digital printing and exceptional flatness, ACP offers outstanding durability, weather resistance, and ease of installation, making it the go-to choice for professionals in the signage and construction industries.<br>Get in touch for prices.</p>
+        
+        <div class="inline-contact-icons">
+            <div class="contact-icon">
+                <img src="Images/LandlineIcon.svg" alt="Call Icon">
+                <span>0300 124 6151</span>
+                <div class="qr-code-popup">
+                    <img src="Images/LandlineQR.svg" alt="Call QR Code">
+                    <span>SCAN TO CALL</span>
+                </div>
+            </div>
+            <div class="contact-icon">
+                <img src="Images/WhatsAppIcon.svg" alt="WhatsApp Icon">
+                <span>WhatsApp Chat</span>
+                <div class="qr-code-popup">
+                    <img src="Images/QRIcon.svg" alt="WhatsApp QR Code">
+                    <span>SCAN TO CHAT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Hoarding Panel -->
+<div class="content-panel" id="hoardingPanel">
+    <div class="product-panel-content">
+        <h3>Hoarding Digital Panel</h3>
+        <button class="back-button" onclick="openPanel('productsPanel')">← Back to Products</button>
+
+        <div class="product-images">
+            <div class="preview-image-box">
+                <img src="Images/Cre8BondIMG1.svg" alt="Hoarding">
+            </div>
+            <div class="preview-image-box">
+                <img src="Images/Cre8BondIMG2.svg" alt="Hoarding">
+            </div>
+            <div class="preview-image-box">
+                <img src="Images/Cre8BondIMG3.svg" alt="Hoarding">
+            </div>
+        </div>
+        
+        
+
+        <p>Our Hoarding Digital Panels are specially designed for large-format temporary installations, making them ideal for construction site perimeters, retail developments, and promotional spaces. Manufactured using durable aluminium composite material, they offer excellent weather resistance and a smooth surface perfect for high-quality digital printing.
+
+            Whether you're showcasing your brand, promoting a development, or creating visual impact on-site, these panels ensure maximum visibility with vibrant, long-lasting graphics.<br>Get in touch for prices.</p>
+
+        <div class="inline-contact-icons">
+            <div class="contact-icon">
+                <img src="Images/LandlineIcon.svg" alt="Call Icon">
+                <span>0300 124 6151</span>
+                <div class="qr-code-popup">
+                    <img src="Images/LandlineQR.svg" alt="Call QR Code">
+                    <span>SCAN TO CALL</span>
+                </div>
+            </div>
+
+            <div class="contact-icon">
+                <img src="Images/WhatsAppIcon.svg" alt="WhatsApp Icon">
+                <span>WhatsApp Chat</span>
+                <div class="qr-code-popup">
+                    <img src="Images/QRIcon.svg" alt="WhatsApp QR Code">
+                    <span>SCAN TO CHAT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Acrylic Sheets Panel -->
+    <div class="content-panel" id="acrylicSheetsPanel">
+        <h2>Acrylic</h2>
+
+        <button class="back-button" onclick="openPanel('productsPanel')">← Back to Products</button>
+
+        <div class="product-images">
+            <div class="preview-image-box">
+                <img src="Images/AcrylicIMG1.svg" alt="Foam Full Image 1">
+            </div>
+            <div class="preview-image-box">
+                <img src="Images/AcrylicIMG2.svg" alt="Foam Full Image 2">
+            </div>
+        </div>
+
+        <p>
+            Acrylic sheet is one of the best-known plastic sheet materials.<br>
+            These sheets are available in a cast version and are available in various colours.<br>
+            Acrylic sheets are widely used in the advertising, lighting and decoration markets.
+        </p>
+
+        <p>Get in touch for prices.</p>
+
+        <div class="inline-contact-icons">
+            <div class="contact-icon">
+                <img src="Images/LandlineIcon.svg" alt="Call Icon">
+                <span>0300 124 6151</span>
+                <div class="qr-code-popup">
+                    <img src="Images/LandlineQR.svg" alt="Call QR Code">
+                    <span>SCAN TO CALL</span>
+                </div>
+            </div>
+
+            <div class="contact-icon">
+                <img src="Images/WhatsAppIcon.svg" alt="WhatsApp Icon">
+                <span>WhatsApp Chat</span>
+                <div class="qr-code-popup">
+                    <img src="Images/QRIcon.svg" alt="WhatsApp QR Code">
+                    <span>SCAN TO CHAT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CRE8FOAMboard Panel -->
+    <div class="content-panel" id="cre8foamPanel">
+        <div class="panel-heading">
+            <img src="Images/FoamboardLogo.svg" alt="CRE8FOAM Heading">
+        </div>
+
+        <button class="back-button" onclick="openPanel('productsPanel')">← Back to Products</button>
+
+        <div class="product-images">
+            <div class="preview-image-box">
+                <img src="Images/FoamBoardIMG1.svg" alt="Foam Full Image 1">
+            </div>
+            <div class="preview-image-box">
+                <img src="Images/FoamBoardIMG2.svg" alt="Foam Full Image 2">
+            </div>
+        </div>
+
+        <p>
+            These plastic sheets have a foamed core and two dense top layers.<br>
+            Thanks to the foam core, the sheets are considerably lighter than solid sheets made of the same plastic.<br>
+            The foamed sign boards are all easy to print on and easy to machine.<br>
+            The industrial sheets have good mechanical and thermal properties and are widely used in the industry.
+        </p>
+
+        <p>Get in touch for prices.</p>
+
+        <div class="inline-contact-icons">
+            <!-- Call Icon with QR -->
+            <div class="contact-icon">
+                <img src="Images/LandlineIcon.svg" alt="Call Icon">
+                <span>0300 124 6151</span>
+                <div class="qr-code-popup">
+                    <img src="Images/LandlineQR.svg" alt="Call QR Code">
+                    <span>SCAN TO CALL</span>
+                </div>
+            </div>
+
+            <!-- WhatsApp Icon with QR -->
+            <div class="contact-icon">
+                <img src="Images/WhatsAppIcon.svg" alt="WhatsApp Icon">
+                <span>WhatsApp Chat</span>
+                <div class="qr-code-popup">
+                    <img src="Images/QRIcon.svg" alt="WhatsApp QR Code">
+                    <span>SCAN TO CHAT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- CRE8DISPLAY Panel -->
+<div class="content-panel" id="cre8displayPanel">
+    <div class="panel-heading">
+        <img src="Images/DisplayLogo.svg" alt="CRE8DISPLAY Heading">
+    </div>
+
+    <button class="back-button" onclick="openPanel('productsPanel')">← Back to Products</button>
+
+    <div class="product-images">
+        <div class="preview-image-box"><img src="Images/Cre8DisplayIMG1.svg" alt="Display Full 1"></div>
+        
+
+        <div class="preview-image-box"><img src="Images/Cre8DisplayIMG4.svg" alt="Display Full 4"></div>
+        <div class="preview-image-box"><img src="Images/Cre8DisplayIMG5.svg" alt="Display Full 5"></div>
+        <div class="preview-image-box"><img src="Images/Cre8DisplayIMG6.svg" alt="Display Full 6"></div>
+        
+        <div class="preview-image-box"><img src="Images/Cre8DisplayIMG8.svg" alt="Display Full 8"></div>
+    </div>
+
+    <p>
+        Our slim and stylish LED menu frames, perfect for restaurants, takeaways, and other indoor commercial spaces.
+    </p>
+
+    <h4>Key Features:</h4>
+    <ul>
+        <li>✔️ <strong>Bright & Energy-Efficient:</strong> Utilises advanced LED backlighting for a vibrant, energy-saving display with a longer lifespan compared to traditional fluorescent tubes.</li>
+        <li>✔️ <strong>Easy Graphic Changes:</strong> Features a magnetic connection system, allowing you to swap out advertising graphics effortlessly using the included suction tool.</li>
+        <li>✔️ <strong>Premium Quality Construction:</strong> Crafted from top-grade aluminium and acrylic panels, specifically designed for LED backlit media to ensure maximum clarity and durability.</li>
+        <li>✔️ <strong>Designed for Efficiency:</strong> Built with high-brightness, long-life, and energy-efficient LEDs, making them a cost-effective signage solution.</li>
+    </ul>
+
+    <p>Get in touch for prices.</p>
+
+    <div class="inline-contact-icons">
+        <!-- Call Icon with QR -->
+        <div class="contact-icon">
+            <img src="Images/LandlineIcon.svg" alt="Call Icon">
+            <span>0300 124 6151</span>
+            <div class="qr-code-popup">
+                <img src="Images/LandlineQR.svg" alt="Call QR Code">
+                <span>SCAN TO CALL</span>
+            </div>
+        </div>
+
+        <!-- WhatsApp Icon with QR -->
+        <div class="contact-icon">
+            <img src="Images/WhatsAppIcon.svg" alt="WhatsApp Icon">
+            <span>WhatsApp Chat</span>
+            <div class="qr-code-popup">
+                <img src="Images/QRIcon.svg" alt="WhatsApp QR Code">
+                <span>SCAN TO CHAT</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="content-panel" id="cre8ledPanel">
+    <div class="panel-heading">
+        <img src="Images/LEDLogo.svg" alt="CRE8LED Heading">
+    </div>
+
+    <button class="back-button" onclick="openPanel('productsPanel')">← Back to Products</button>
+
+    <div class="product-images">
+        <div class="preview-image-box"><img src="Images/Cre8LEDIMG1.svg" alt="CRE8LED Image 1"></div>
+        <div class="preview-image-box"><img src="Images/Cre8LEDIMG2.svg" alt="CRE8LED Image 2"></div>
+        <div class="preview-image-box"><img src="Images/Cre8LEDIMG3.svg" alt="CRE8LED Image 3"></div>
+        <div class="preview-image-box"><img src="Images/Cre8LEDIMG4.svg" alt="CRE8LED Image 4"></div>
+        <div class="preview-image-box"><img src="Images/Cre8LEDIMG5.svg" alt="CRE8LED Image 5"></div>
+        <div class="preview-image-box"><img src="Images/Cre8LEDIMG6.svg" alt="CRE8LED Image 6"></div>
+    </div>
+
+    <div class="product-description">
+        <p>Our LED sign-lighting modules are professional-grade solutions ideal for backlighting signage, particularly channel letters.<br>
+        The flexible wiring between each module allows them to be positioned precisely to match the shape of the signage — perfect for intricate shapes such as letters or logos.</p>
+    
+        <p>Our LED modules feature strong light output with a wide beam angle, offering an energy-efficient and visually striking backlighting solution.<br>
+        They are <strong>IP67 rated</strong>, making them suitable for both indoor and outdoor use.</p>
+    
+        <p>We offer a wide range of LED modules in various styles and colours.<br>
+        Options include single and double modules in solid colours, with a selection of colour temperatures such as bright warm white and cool white.<br>
+        Also available are <strong>RGB LED modules</strong>, capable of producing over 16 million colours for dynamic and eye-catching effects.</p>
+    
+        <p>Our <strong>Rigid Light Box Bars</strong> are available in 6500K and serve as an efficient replacement for traditional fluorescent light tubes.</p>
+    
+        <p>We also provide the necessary copper wiring and compatible drivers (transformers) to support your LED setup and ensure optimal performance.<br>
+        <em>If you require assistance, please don’t hesitate to contact our sales team for expert advice.</em></p>
+    </div>
     
 
+    <h3>Product Types</h3>
+    <ul class="led-subcategories">
+        <li>LED MODULES</li>
+        <li>LED RIGID BAR</li>
+        <li>LED CABLE</li>
+        <li>LED TRANSFORMERS</li>
+    </ul>
+
+    <p>Get in touch for prices.</p>
+
+    <div class="inline-contact-icons">
+        <div class="contact-icon">
+            <img src="Images/LandlineIcon.svg" alt="Call Icon">
+            <span>0300 124 6151</span>
+            <div class="qr-code-popup">
+                <img src="Images/LandlineQR.svg" alt="Call QR Code">
+                <span>SCAN TO CALL</span>
+            </div>
+        </div>
+
+        <div class="contact-icon">
+            <img src="Images/WhatsAppIcon.svg" alt="WhatsApp Icon">
+            <span>WhatsApp Chat</span>
+            <div class="qr-code-popup">
+                <img src="Images/QRIcon.svg" alt="WhatsApp QR Code">
+                <span>SCAN TO CHAT</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<div class="content-panel" id="adhesivesPanel">
+    <h2>Adhesives / Accessories</h2>
+    <button class="back-button" onclick="openPanel('productsPanel')">← Back to Products</button>
+
+    <div class="product-images">
+        <div class="preview-image-box"><img src="Images/AdhesivesIMG1.svg" alt="Adhesive Image 1"></div>
+        <div class="preview-image-box"><img src="Images/AdhesivesIMG2.svg" alt="Adhesive Image 2"></div>
+        <div class="preview-image-box"><img src="Images/AdhesivesIMG3.svg" alt="Adhesive Image 3"></div>
+        <div class="preview-image-box"><img src="Images/AdhesivesIMG4.svg" alt="Adhesive Image 4"></div>
+        <div class="preview-image-box"><img src="Images/AdhesivesIMG5.svg" alt="Adhesive Image 5"></div>
+        <div class="preview-image-box"><img src="Images/AdhesivesIMG6.svg" alt="Adhesive Image 6"></div>
+        <div class="preview-image-box"><img src="Images/AdhesivesIMG7.svg" alt="Adhesive Image 7"></div>
+        <div class="preview-image-box"><img src="Images/AdhesivesIMG8.svg" alt="Adhesive Image 8"></div>
+        <div class="preview-image-box"><img src="Images/AdhesivesIMG9.svg" alt="Adhesive Image 9"></div>
+        <div class="preview-image-box"><img src="Images/AdhesivesIMG10.svg" alt="Adhesive Image 10"></div>
+    </div>
+
+    <div class="product-description">
+        <h3>Product Types</h3>
+        <ul>
+            <li><strong>MITRE ADHESIVE:</strong> A fast-acting two-part bonding solution ideal for quick fixes and seamless joints in sign fabrication. Perfect for bonding trims, profiles, and panel edges with precision.</li>
+    
+            <li><strong>CLEAR BONDING TAPE:</strong> A high-strength, transparent double-sided tape offering a clean, invisible bond. Designed for mounting acrylic letters, panels, and signage without mechanical fixings.</li>
+    
+            <li><strong>SILICON:</strong> Weather-resistant and flexible sealant suitable for both indoor and outdoor applications. Provides a long-lasting hold while accommodating material movement and temperature fluctuations.</li>
+    
+            <li><strong>LOCATORS (Flat Cut Letter Locators – Mini, Medium & Large):</strong> Essential for mounting flat cut letters and logos with precision. Available in multiple sizes to suit a wide range of materials and depths, allowing for secure and professional installation.</li>
+        </ul>
+    
+        <p>Get in touch for prices and tailored product advice to suit your project requirements.</p>
+    </div>
+    
+
+    <div class="inline-contact-icons">
+        <div class="contact-icon">
+            <img src="Images/LandlineIcon.svg" alt="Call Icon">
+            <span>0300 124 6151</span>
+            <div class="qr-code-popup">
+                <img src="Images/LandlineQR.svg" alt="Call QR Code">
+                <span>SCAN TO CALL</span>
+            </div>
+        </div>
+
+        <div class="contact-icon">
+            <img src="Images/WhatsAppIcon.svg" alt="WhatsApp Icon">
+            <span>WhatsApp Chat</span>
+            <div class="qr-code-popup">
+                <img src="Images/QRIcon.svg" alt="WhatsApp QR Code">
+                <span>SCAN TO CHAT</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="content-panel" id="projectionPanel">
+    <h2>LED Projection Lightboxes</h2>
+    <button class="back-button" onclick="openPanel('productsPanel')">← Back to Products</button>
+
+    <div class="product-images">
+        <div class="preview-image-box"><img src="Images/ProjectionSignIMG1.svg" alt="Signage Image 1"></div>
+        <div class="preview-image-box"><img src="Images/ProjectionSignIMG2.svg" alt="Signage Image 2"></div>
+        <div class="preview-image-box"><img src="Images/ProjectionSignIMG3.svg" alt="Signage Image 3"></div>
+    </div>
+
+    <div class="product-description">
+        <p>Projection light boxes are commonly used in a variety of applications, including art installations, commercial displays, and brand advertising.</p>
+        
+        <p>They are designed to project images, patterns, or lighting effects onto surfaces — adding depth, dimension, and visual impact to any space.</p>
+    
+        <p>We offer several types of projection light boxes, each tailored to different display needs and creative goals. Please explore our full range for more options.</p>
+    
+        <p><strong>Get in touch</strong> for pricing and product recommendations.</p>
+    </div>
+
+    <div class="inline-contact-icons">
+        <div class="contact-icon">
+            <img src="Images/LandlineIcon.svg" alt="Call Icon">
+            <span>0300 124 6151</span>
+            <div class="qr-code-popup">
+                <img src="Images/LandlineQR.svg" alt="Call QR Code">
+                <span>SCAN TO CALL</span>
+            </div>
+        </div>
+        <div class="contact-icon">
+            <img src="Images/WhatsAppIcon.svg" alt="WhatsApp Icon">
+            <span>WhatsApp Chat</span>
+            <div class="qr-code-popup">
+                <img src="Images/QRIcon.svg" alt="WhatsApp QR Code">
+                <span>SCAN TO CHAT</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="content-panel" id="signagePanel">
+    <h2>Signage & Fabrication</h2>
+    <button class="back-button" onclick="openPanel('productsPanel')">← Back to Products</button>
+
+    <div class="product-images">
+        <div class="preview-image-box"><img src="Images/SignageIMG1.svg" alt="Signage Image 1"></div>
+        <div class="preview-image-box"><img src="Images/SignageIMG2.svg" alt="Signage Image 2"></div>
+        <div class="preview-image-box"><img src="Images/SignageIMG3.svg" alt="Signage Image 3"></div>
+        <div class="preview-image-box"><img src="Images/SignageIMG4.svg" alt="Signage Image 4"></div>
+        <div class="preview-image-box"><img src="Images/SignageIMG5.svg" alt="Signage Image 5"></div>
+        <div class="preview-image-box"><img src="Images/SignageIMG6.svg" alt="Signage Image 6"></div>
+        <div class="preview-image-box"><img src="Images/SignageIMG7.svg" alt="Signage Image 7"></div>
+        <div class="preview-image-box"><img src="Images/SignageIMG9.svg" alt="Signage Image 9"></div>
+        <div class="preview-image-box"><img src="Images/SignageIMG10.svg" alt="Signage Image 10"></div>
+    </div>
+
+    <div class="product-description">
+        <ul>
+            <li>Tray Signs (Sign Trays, Fret Cut Trays, Push Through Letter Trays, Etc)</li>
+            <li>3D Letters (Acrylic, Stainless Steel & Aluminium Coil) - coming soon.</li>
+            <li>Flat Cut Letters (Acrylic, ACM, FoamBoard, Etc)</li>
+            <li>CNC</li>
+            <li>Laser Cutting / Engraving - Coming soon.</li>
+            <li>Digital Printing & Laminating</li>
+            <li>Large Flat Bed UV Printing - coming soon.</li>
+            <li>Vinyl Cutting</li>
+        </ul>
+    </div>
+
+    <p>Get in touch for prices.</p>
+
+    <div class="inline-contact-icons">
+        <div class="contact-icon">
+            <img src="Images/LandlineIcon.svg" alt="Call Icon">
+            <span>0300 124 6151</span>
+            <div class="qr-code-popup">
+                <img src="Images/LandlineQR.svg" alt="Call QR Code">
+                <span>SCAN TO CALL</span>
+            </div>
+        </div>
+        <div class="contact-icon">
+            <img src="Images/WhatsAppIcon.svg" alt="WhatsApp Icon">
+            <span>WhatsApp Chat</span>
+            <div class="qr-code-popup">
+                <img src="Images/QRIcon.svg" alt="WhatsApp QR Code">
+                <span>SCAN TO CHAT</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact Us Panel -->
+<div class="content-panel" id="contactPanel">
+    <h2>Contact Us</h2>
+
+    <div class="contact-grid">
+        <!-- Contact Methods -->
+        <div class="contact-methods">
+
+            <!-- Email -->
+            <div class="contact-item">
+                <img src="Images/EmailIcon.svg" alt="Email Icon">
+                <a href="mailto:sales@cre8.london">sales@cre8.london</a>
+                <div class="qr-code-popup">
+                    <img src="Images/EmailQR.svg" alt="Email QR Code">
+                    <span>SCAN TO EMAIL</span>
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item">
+                <img src="Images/LandlineIcon.svg" alt="Phone Icon">
+                <span>0300 124 6151</span>
+                <div class="qr-code-popup">
+                    <img src="Images/LandlineQR.svg" alt="Call QR Code">
+                    <span>SCAN TO CALL</span>
+                </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="contact-item">
+                <a href="https://wa.me/447511816618" target="_blank">
+                    <img src="Images/WhatsAppIcon.svg" alt="WhatsApp Icon">
+                </a>
+                <span>WhatsApp Chat</span>
+                <div class="qr-code-popup">
+                    <img src="Images/QRIcon.svg" alt="WhatsApp QR Code">
+                    <span>SCAN TO CHAT</span>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-address">
+                <strong>Address:</strong><br>
+                Unit 3 Hobbs Cross Business Centre,<br>
+                Hobbs Cross Road, Theydon Garnon,<br>
+                Epping, Essex, CM16 7NY
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="opening-hours">
+                <strong>Opening Hours:</strong><br>
+                <ul>
+                    <li><strong>Monday - Friday:</strong> 9:00 AM – 5:30 PM</li>
+                    <li><strong>Saturday:</strong> 9:00 AM – 12:00 PM</li>
+                    <li><strong>Sunday:</strong> Closed</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2474.285842765654!2d0.13084481857327301!3d51.67291069554191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a3cec0248a6f%3A0x3d12587f28ce9c20!2sCRE8%20SIGN%20SUPPLIES!5e0!3m2!1sen!2suk!4v1743451996801!5m2!1sen!2suk" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+    <!-- Neon Button GIF Link -->
+    <a href="https://example.com/coming-soon" target="_blank" class="neon-button">
+        <img src="Videos/Cre8NeonButton.gif" alt="CRE8 Neon Button">
+    </a>
+    
+
+
+    <footer id="site-footer" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+        <div class="footer-whatsapp">
+            <a href="https://wa.me/447511816618" target="_blank">
+                <img src="Images/WhatsAppIcon.svg" alt="WhatsApp">
+            </a>
+            <div class="qr-code">
+                <img src="Images/QRIcon.svg" alt="WhatsApp QR Code">
+                <span>SCAN ME</span>
+            </div>
+        </div>
+    
+        <div class="footer-text">
+            <p>Copyright &copy; CRE8 Sign Supplies Ltd.</p>
+            <p>Website Designed & Developed by Plot Perfect Studios Ltd.</p>
+        </div>
+    
+        <div class="footer-email">
+            <a href="mailto:sales@cre8.london" class="mobile-email-link">
+                <img src="Images/EmailIcon.svg" alt="Email Icon">
+            </a>
+            <span class="email-text">sales@cre8.london</span>
+            <div class="qr-code email-qr">
+                <img src="Images/EmailQR.svg" alt="Email QR Code">
+                <span>SCAN TO EMAIL</span>
+            </div>
+        </div>
+        
+        
+    </footer>
+    
+    
+    <script src="Scripts/script.js"></script>
 </body>
 </html>
