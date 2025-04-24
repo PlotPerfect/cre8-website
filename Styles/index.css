@@ -1237,6 +1237,8 @@ body {
 
 
 .spec-section {
+margin-top: 50px;
+    display: relative;
     background: #f9f9f9;
     border-radius: 12px;
     padding: 20px;
@@ -1472,11 +1474,6 @@ body {
     .contact-icon img {
         width: 30px;
         height: 30px; /* Adjust contact icon size */
-    }
-
-    .spec-section {
-        padding: 15px;
-        margin-bottom: 20px; /* Adjust padding and margin */
     }
 
     .colour-box,
